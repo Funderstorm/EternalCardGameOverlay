@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:25:31 AM
+Notes: no binarize and yes resolution
+Time: 193 ms or 0.193 s Accuracy: 2 / 12
+Results:
+xenanbanner
+
+
+swearvengeance
+
+
+
+
+
+
+
+
+

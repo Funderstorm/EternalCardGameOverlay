@@ -1,0 +1,17 @@
+Executed Time: 9/13/2017 12:51:41 AM
+Notes: no binarize and yes resolution
+Time: 28 ms or 0.028 s Accuracy: 7 / 12
+Results:
+talirschoice
+pitfighter
+xenanstranger
+cobaltring
+cdpperhallshieldman
+vipiersbite
+vtirelessstranger
+blinkwolf
+
+praxisbanner
+skywalkinstructor
+
+

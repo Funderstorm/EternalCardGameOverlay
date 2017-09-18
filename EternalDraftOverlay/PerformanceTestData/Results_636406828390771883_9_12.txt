@@ -1,0 +1,17 @@
+Executed Time: 9/10/2017 11:27:19 PM
+Notes: no binarize and yes resolution
+Time: 8 ms or 0.008 s Accuracy: 9 / 12
+Results:
+catburglar
+clanhero
+topazdrake
+brashshorthorn
+sparkbot
+sanguinesword
+snowcrustyeti
+copperhallherald
+evelop
+vialkyrielinebreaker
+aviraxfamiliar
+eicavationassistant
+

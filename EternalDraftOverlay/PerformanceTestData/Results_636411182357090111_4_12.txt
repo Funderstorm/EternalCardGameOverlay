@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:23:55 AM
+Notes: no binarize and yes resolution
+Time: 52 ms or 0.052 s Accuracy: 4 / 12
+Results:
+jacksknife
+aerialistskhopesh
+
+varaschoice
+vvoyaginglumen
+
+xenanbanner
+
+
+xwakenedsentinel
+
+
+

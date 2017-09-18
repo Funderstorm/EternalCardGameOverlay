@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:32:47 AM
+Notes: no binarize and yes resolution
+Time: 273 ms or 0.273 s Accuracy: 0 / 12
+Results:
+
+
+
+
+
+
+
+
+
+
+
+
+

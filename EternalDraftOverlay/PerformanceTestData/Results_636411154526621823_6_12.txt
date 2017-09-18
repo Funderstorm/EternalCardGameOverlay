@@ -1,0 +1,17 @@
+Executed Time: 9/15/2017 11:37:32 PM
+Notes: no binarize and yes resolution
+Time: 29 ms or 0.029 s Accuracy: 6 / 12
+Results:
+granitering
+tocktick
+arnaranarchaeologist
+ecepterofnobility
+gelchingbehemoth
+journeymanarmorer
+snowcrustyeti
+tinker
+ivoyagiinglumen
+gtalwartsilverwing
+stormcrasher
+
+

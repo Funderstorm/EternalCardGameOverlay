@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:30:19 AM
+Notes: no binarize and yes resolution
+Time: 50 ms or 0.05 s Accuracy: 3 / 12
+Results:
+hellfirerifle
+
+
+decay
+
+
+vemeraldacolyte
+
+
+pteriaxhatchling
+
+
+

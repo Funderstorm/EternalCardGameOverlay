@@ -1,0 +1,664 @@
+S;Xenan Obelisk
+S;Harsh Rule
+S;Thunderstrike Dragon
+S;Crystallize
+S;Eye of Winter
+S;Statuary Maiden
+S;Ijin, Imperial Armorer
+S;Predatory Carnosaur
+S;Knight-Chancellor Siraf
+S;Paladin Oathbook
+S;The Great Parliament
+S;Rolant's Honor Guard
+S;Accelerated Evolution
+S;Silverwing Commander
+S;Sandstorm Titan
+S;Cirso, the Great Glutton
+S;Leave a Witness 
+S;Rimescale Draconus
+S;Pearlescent Drake 
+S;Molot & Nakova
+S;Mistveil Drake
+S;Fourth-Tree Elder
+S;Bartholo, the Seducer
+S;Inquisitor Makto
+A+;Twinbrood Sauropod
+A+;Annihilate
+A+;Valkyrie Enforcer
+A+;Ayan, the Abductor
+A+;Striking Snake Formation
+A+;Banish
+A+;Deathstrike
+A+;Feeding Time
+A+;Crystalline Chalice
+A+;Elias, the Broken Wing 
+A+;Worldpyre Phoenix
+A+;Slay
+A+;Kothon, the Far-Watcher
+A+;Memory Dredger 
+A+;Steelfang Chakram
+A+;Mystic Ascendant
+A+;Nostrix, Lord of Visions
+A+;Vanquish
+A+;Marisen, the Eldest
+A+;Sindok, Rage Incarnate
+A+;Steelbound Dragon
+A+;Pillar of Amar
+A+;Diogo Malaga
+A+;Grinva, Judge of Battles
+A+;Heart of the Vault
+A+;Auric Runehammer
+A+;Slimespitter Slug
+A+;General Izalio
+A+;Black-Sky Harbinger
+A+;Obliterate
+A+;Snowcrush Animist
+A+;Torch
+A+;Execute
+A+;Suffocate
+A+;Shadowlands Bonepicker
+A+;Vadius, Clan Father
+A+;Scraptank
+A+;Strength of the Pack
+A+;Rolant, the Iron Fist
+A+;Obrak, the Feaster 
+A+;Umbren Reaper
+A+;Infernal Tyrant
+A+;Soulfire Drake
+A;Torgov, Icecap Trader
+A;Watcher of the Big Ones
+A;Magus of the Mist
+A;Marisen’s Disciple
+A;Cobalt Monument
+A;Vodakhan’s Staff
+A;Ageless Mentor
+A;Katra, the Devoted
+A;Hammer of Might
+A;Permafrost
+A;Awakened Student
+A;Deepforged Plate
+A;Sapphire Dragon
+A;Ancient Terrazon
+A;Rhinarc Huntpack
+A;Rebel Illuminator
+A;Stand Together
+A;Amber Monument
+A;Hunting Pteriax
+A;Flame Blast
+A;Icaria, the Liberator
+A;Lethrai Falchion
+A;Impending Doom
+A;Ashara, the Deadshot
+A;Karmic Guardian
+A;Lightning Strike
+A;Warband Chieftan
+A;Steward of the Past
+A;Bloodcall Invoker
+A;Scorpion Wasp
+A;Copperhall Elite
+A;Midnight Gale
+A;Shelterwing Rider
+A;Shogun’s Scepter
+A;Stormcaller
+A;Jotun Hurler
+A;Outlands Sniper
+A;Smuggler's Stash
+A;Ice Sprite
+A;Copper Conduit
+A;Touch of the Umbren
+A;Vara, Fate-Touched
+A;Sword of the Sky King
+A;Adaptive Predator
+A-;Rakano Outlaw
+A-;Silverwing Familiar
+A-;Augmented Form
+A-;Hatchery Hunter
+A-;Lightning Storm
+A-;Reality Warden
+A-;Venomspine Hydra
+A-;Worldjoiner
+A-;Silverwing Avenger
+A-;Order of the Spire
+A-;Pteriax Hatchling
+A-;Deranged Dinomancer
+A-;Argenport Instigator
+A-;Blistersting Wasp
+A-;Hunter’s Harpoon
+A-;Explorer Emeritus
+A-;Pyroknight
+A-;Finest Hour
+A-;Valkyrie Wings
+A-;Plague
+A-;Mortar
+A-;Oni Ronin
+A-;Bladekin Aprentice
+A-;Nesting Avisaur
+A-;Soaring Stranger
+A-;Desert Marshal
+A-;Withering Witch
+A-;Flamestoker 
+A-;Knucklebones
+A-;Plated Goliath 
+A-;Pouncing Drake
+B+;Gorgon Swiftblade
+B+;Tinker Overseer
+B+;Cloudsnake Harrier
+B+;Duelist’s Blade
+B+;Reliquary Raider
+B+;Twilight Raptor
+B+;Extract
+B+;Staff of Stories
+B+;Champion of Chaos
+B+;Cobalt Acolyte
+B+;Vodakhan, Temple Speaker
+B+;Navani, Warsinger
+B+;Direwood Prowler
+B+;Stonescar Maul
+B+;Streetwise Informant
+B+;Furnace Mage
+B+;Praxis Displacer
+B+;Rebel Sharpshooter
+B+;Waystone Infuser 
+B+;Lumen Shepherd
+B+;Crownwatch Cavalry
+B+;Rolant’s Choice
+B+;Beastcaller’s Amulet
+B+;Bandit Queen
+B+;False Prince
+B+;Skycrag Wyvarch
+B+;Auric Sentry
+B+;Marshal Ironthorn
+B+;Amber Acolyte
+B+;Lethrai Ranger
+B+;Recurring Nightmare
+B+;Champion of Cunning
+B+;Rapid Shot
+B+;Purify
+B+;Rockslide
+B+;Obsidian Golem
+B+;Lethrai Nightblade
+B+;Cabal Countess
+B+;Ravenous Thornbeast
+B+;Feln Bloodcaster
+B+;Seek Power
+B+;Champion of Mystery
+B+;Gorgon Fanatic
+B+;Minotaur Lighthoof
+B+;Towering Stranger
+B+;Bereaved Stranger
+B;Argenport Banner
+B;Combrei Banner
+B;Elysian Banner
+B;Feln Banner
+B;Hooru Banner
+B;Praxis Banner
+B;Rakano Banner
+B;Skycrag Banner
+B;Stonescar Banner
+B;Xenan Banner
+B;Diplomatic Seal
+B;Horsesnatcher Bat
+B;Morningstar
+B;Aerialist Trainer
+B;Library Phoenix
+B;Shatterglass Mage
+B;Lumen Defender
+B;Jarall Iceheart
+B;Whispering Wind
+B;Shogun of the Wastes
+B;Dawnwalker
+B;Call the Ancients
+B;Polymorph
+B;Borderlands Waykeeper
+B;Amethyst Acolyte
+B;Curiox, the Collector
+B;Clan Hero
+B;Brightmace Paladin
+B;Direwood Beastcaller
+B;Elder’s Feather
+B;Talir, Who Sees Beyond
+B;Starsteel Daisho
+B;Argenport Stranger
+B;Combrei Stranger
+B;Elysian Stranger
+B;Feln Stranger
+B;Hooru Stranger
+B;Praxis Stranger
+B;Rakano Stranger
+B;Skycrag Stranger
+B;Stonescar Stranger
+B;Xenan Stranger
+B;Blind Storyteller
+B;Ornate Katana
+B;Sandstorm
+B;Granite Acolyte
+B;Dark Return
+B;Throne Warden
+B;Crownwatch Deserter
+B;Bolster
+B;Towering Terrazon
+B;Beckoning Lumen 
+B;Skyward Seer
+B;Argenport Ringmaster
+B;Nightmaw, Sight Unseen
+B;Rolant's Fist 
+B;Sleepless Night
+B;Highwind Glider
+B;Eilyn’s Choice
+B;Sand Viper 
+B;Clockroach
+B;Champion of Wisdom
+B;Levitate
+B;Jarrall’s Frostkin
+B;Valkyrie Spireguard 
+B;Peacekeeper's Prod 
+B;Tinker
+B;Copperhall Cudgel
+B;Gilded Glaive
+B;Wild Cloudsnake
+B;Savage Stranger
+B;Determined Stranger
+B;Battle-Tested Stranger 
+B;Tranquil Scholar 
+B;Storm Glider
+B;Spirit Guide 
+B;Amethyst Monument
+B;Unstable Form
+B;Groundbreaker 
+B;Oni Quartermaster
+B;Xenan Initiation 
+B-;Serpent Trainer
+B-;Stormcrasher 
+B-;Humbug Swarm 
+B-;Granite Ring 
+B-;Tundra Explorer
+B-;Minotaur Grunt
+B-;Striped Araktodon
+B-;Spire Chaplain
+B-;Tireless Stranger
+B-;Valkyrie Denouncer
+B-;Piercing Shot
+B-;Sword of Icaria
+B-;Prosecutor-at-Arms 
+B-;Plated Demolisher
+B-;Grenadin Drone
+B-;Ceremonial Mask
+B-;Roosting Owl 
+B-;Longhorn Sergeant
+B-;Steward of Prophecy
+B-;Desperado
+B-;Combrei Healer
+B-;Storm Lynx
+B-;Wisdom of the Elders
+B-;Hero of the People
+B-;Xenan Guardian
+B-;Dragonbreath
+B-;Static Bolt
+B-;Emerald Ring 
+B-;Cabal Cutthroat
+B-;Relentless Gorehorn 
+B-;Champion of Fury
+B-;Champion of Vengeance
+B-;Swindle
+B-;Crownwatch Paladin
+B-;Cat Burglar
+B-;Slumbering Stone
+B-;Bold Adventurer
+B-;Charchain Flail
+B-;Soul Collector
+B-;Dispel
+B-;Xenan Destroyer
+B-;Champion of Glory
+B-;Enlightened Stranger
+B-;Ruthless Stranger
+B-;Mirror Image
+B-;Thunderhoof Warrior 
+B-;Auric Vigilante
+B-;Longshot Marksman 
+B-;Noble Firemane
+B-;Xenan Cupbearer
+C+;Windshaper
+C+;Righteous Fury
+C+;Field Captain
+C+;Archive Curator 
+C+;Merciless Stranger
+C+;Towertop Patrol
+C+;Inspire
+C+;Gun Down
+C+;Flash Freeze
+C+;Frontline Cyclops
+C+;Stonescar Magus
+C+;Cabal Recruiter
+C+;Skywalk Instructor
+C+;Auric Bully
+C+;Highbranch Sentry
+C+;Hipshot
+C+;Icebow
+C+;Journeyman Armorer
+C+;Oasis Seeker
+C+;Stonepowder Alchemist
+C+;Valkyrie Linebreaker
+C+;Channel the Tempest
+C+;Champion of Order
+C+;Champion of Impulse
+C+;Claw of the First Dragon
+C+;Awakened Sentinel 
+C+;Emerald Monument
+C+;Granite Monument
+C+;Rise to the Challenge
+C+;Strength of Many
+C+;Bring Down
+C+;Violent Gust
+C+;District Infantry
+C+;Snowcrust Yeti
+C+;Sparring Partner 
+C+;Twinning Ritual
+C+;Refresh
+C+;Pummel
+C+;Kaleb, Uncrowned Prince
+C+;Lumbering Gruan
+C+;Voyaging Lumen
+C+;Oblivion Spike
+C+;Yeti Troublemaker
+C+;Minotaur Duelist
+C+;Yeti Snowslinger
+C+;Magma Javelin
+C+;Hatecleaver 
+C+;Bloodletter
+C+;Serpent Mount 
+C+;Skyrider Vanguard 
+C+;Centaur Raidleader
+C+;Lifedrinker
+C+;West-Wind Herald
+C+;Swift Stranger
+C+;Knifejack
+C+;Hooru Fledgling
+C+;Stalwart Shield
+C+;Runic Revolver
+C+;Copperhall Blessing
+C+;Crowd Favorite
+C+;Cabal Bludgeoner
+C+;Cannonbearer
+C+;Amaran Archaeologist
+C+;Find the Way
+C+;Fortunate Stranger
+C+;Ferocious Stranger
+C;Ornamental Daggers
+C;Jack's Knife 
+C;Fearless Nomad
+C;Tinker Apprentice
+C;Fencing Master
+C;Talir’s Choice
+C;Champion of Progress
+C;Shimmerpack
+C;Shadowlands Guide
+C;Blackguard Sidearm
+C;Amethyst Ring 
+C;Eilyn, Queen of the Wilds
+C;Amber Ring 
+C;Blinkwolf
+C;Reforge
+C;Argenport Soldier
+C;Renegade Valkyrie
+C;Battleblur Centaur
+C;Xenan Cultist
+C;Forsworn stranger
+C;Grim Stranger
+C;Prophetic Stranger
+C;Initiate of the Sands
+C;Direfang Spider
+C;Lurking Sanguar
+C;Snapping Brushstalker
+C;Brash Shorthorn
+C;Jotun Cyclops
+C;Dune Phantom
+C;Elysian Trailblazer
+C;East-Wind Herald
+C;Skysnapper
+C;Minotaur Oathkeeper 
+C;Censari Brigand
+C;Scaly Gruan
+C;Kaleb’s Choice
+C;Rampage
+C;Synchronized Strike
+C;Combust
+C;Devour
+C;Rakano Artisan
+C;Blood Beetle
+C;Guerrilla Fighter
+C;Time Weaver
+C;Cabal Slasher
+C;Valkyrie Aspirant
+C;Psionic Savant
+C;Cobalt Ring 
+C;Unlock Potential
+C;Teleport
+C;Vara’s Choice
+C;Crafty Yeti
+C;Disciplined Amanera 
+C;Trickster’s Cloak
+C;Friendly Wisp
+C;Temple Scribe
+C;Sauropod Wrangler
+C;Haunting Scream
+C;Temper
+C;Cabal Rogue 
+C;Copperhall Herald
+C;Predator’s Instinct
+C;Talon of Nostrix
+C;Trailblaze
+C-;Mithril Mace
+C-;Grenade
+C-;Voprex, the Great Ruin
+C-;Ancient Lore
+C-;Scouting Party
+C-;Crownwatch Longsword
+C-;Elysian Pathfinder
+C-;Wandering Wisp 
+C-;Xenan Augury
+C-;Umbren Thirster
+C-;Horned Vorlunk
+C-;Pyre Adept
+C-;Outlands Brute 
+C-;Oni Striker
+C-;Protect
+C-;Dark Wisp
+C-;Second Sight
+C-;Sand Warrior
+C-;Warhelm
+C-;Sorrow's Shroud
+C-;Madness
+C-;Eager Owlet
+C-;Spiked Buckler
+C-;Cloudsnake Saddle
+C-;Spellshield Architect
+C-;Crown of Possibilities
+C-;Flight Lieutenant
+C-;Assembly Line
+C-;Back-Alley Bouncer
+C-;Alchemical Blast
+C-;Whipers in the Void
+C-;Iceknuckle Jotun
+C-;Shield Bash
+C-;Rally
+C-;Jawbone Hatchet
+C-;Safe Return
+C-;Crownwatch Press-Gang
+C-;Avirax Familiar
+C-;Subvert
+C-;Hair-Trigger Stranger
+C-;Sanctuary Priest
+C-;Scheme
+C-;Dormant Sentinel
+C-;Voice of the Speaker
+C-;Fevered Scout
+C-;Evelina, Valley Searcher
+C-;Scavenging Vulture
+C-;Ridgeline Watcher 
+C-;Bad News
+C-;Boltcrafter Shaman
+C-;Meditative Stranger
+C-;Burning Glaive
+C-;Secret Pages
+C-;Brazen Daredevil
+C-;Backlash
+C-;Topaz Drake
+C-;Sanguine Sword
+C-;Scepter of Nobility
+C-;Stalwart Silverwing
+C-;Audacious Bandit
+C-;Camp Physician
+C-;Cloudsnake Breeder 
+C-;Horngrinder 
+C-;Lethrai Memory-Keeper 
+C-;Victor's Cry 
+C-;Xenan Fanatic
+C-;Cult Aspirant
+C-;Crownwatch Squire 
+C-;Valorous Stranger
+D;Pit Fighter
+D;Burn Out
+D;Cripple
+D;Light the Fuse
+D;Twinbarrel
+D;Infinite Hourglass
+D;Shard of the Spire 
+D;Stonepowder Heretic
+D;Amaran Camel
+D;Civic Peacekeeper
+D;Idol of Destran
+D;Belching Behemoth 
+D;Bronze Cuirass
+D;Recogulator
+D;Piercing Grief 
+D;Detain
+D;Cloudsnake Hatchling 
+D;Aerial Ace
+D;Foothills Alpha 
+D;Skeeter
+D;Valkyrie Militant
+D;Bloodrite Kalis
+D;North-Wind Herald
+D;Cloud of Ash
+D;Treasury Guard
+D;Clever Stranger
+D;Moment of Creation
+D;Hall of Lost Kings
+D;Pack Hunt 
+D;Water of Life
+D;Inspire Obedience 
+D;Means to an End 
+D;Sparkbot
+D;Humbug
+D;Dusthoof Brawler
+D;Rabblerouser
+D;Excavation Assistant 
+D;On the Hunt 
+D;Vault of the Praxis
+D;Aerialist's Khopesh 
+D;Loyal Watchwing
+D;Herald’s Song
+D;Direwood Rampager
+D;Icebreaker
+D;Jotun Warrior
+D;Sandglass Sentinel
+D;Brilliant Discovery
+D;Yeti Snowchucker 
+D;Envelop
+D;Treachery
+D;Steadfast Deputy
+D;Hellfire Rifle
+D;Centaur Outrider
+D;Frontier Jito
+D;Blazing Renegade
+D;Mark of Shame
+D;Swear Vengeance 
+D;Heavy Axe
+D;Bloodcall Invocation
+D;The Last Word
+D;Sentinel's Might 
+D;Calderan Gunsmith
+D;Araktodon
+D;Divining Rod
+D;Torrent of Spiders
+D;Copperhall Recruit
+D;Talon Dive 
+D;Icequake
+D;Rebuke
+D;Cirso's Meddling 
+D;Combrei Magister
+D;Grasping at Shadows
+D;Stonescar Leviathan
+D;Venomfang Dagger
+D;Grenadin Cannoneer 
+D;Fallen Oni 
+D;Yeti Spy
+D;Ephemeral Wisp
+D;Tock Tick 
+D;Infernus
+D;Lavablood Goliath
+D;Hooru Envoy
+D;Emerald Acolyte
+D;Minotaur Ambassador
+D;Ghostform
+D;Privilege of Rank
+D;Spirit Drain
+D;Sabotage
+D;Armorsmith
+D;Healer’s Cloak
+D;Ticking Grenadin
+D;Firemane Cub
+D;Hearty Stranger 
+D;Pilfer
+D;Hidden Shiv 
+D;Stoneshaker
+D;Trail Runner
+D;Spell Swipe
+D;Celestial Omen
+D;Stronghold’s Visage
+D;Smith's Hammer 
+D;Copperhall Shieldman
+D;Calderan Cradle
+D;Threaten 
+D;Trigger-Happy 
+D;Viper's Bite 
+D;Weather the Storm 
+D;Master’s Lesson
+D;Shepherd's Horn 
+D;Young Gun 
+D;Alluring Ember
+D;Dustblind
+D;Spur On
+F;Spirit of Resistance
+F;Aid of the Hooru
+F;Decimate
+F;A New Tomorrow
+F;Accelerate
+F;Black Iron Manacles
+F;Ruin
+F;Azindel’s Gift
+F;Excavate
+F;Daze
+F;Decay
+F;Rain of Frogs
+F;Rakano Flagbearer
+F;Reinforce
+F;Brimstone Altar
+F;Mind Link 
+F;Stonescar Excavator
+F;Slow
+F;Song of War
+F;Spiked Helm
+F;Forge Wolf 
+F;Sporefolk
+F;The Witching Hour
+F;Scare 
+F;Treasury Gate
+F;Worn Shield
+F;Scourge of Frosthome
+F;Feln Cauldron
+F;Trail Stories
+F;Forgotten Find 
+F;Maelstrom Bell 
+F;Mating Call 
+F;Workshop Forge

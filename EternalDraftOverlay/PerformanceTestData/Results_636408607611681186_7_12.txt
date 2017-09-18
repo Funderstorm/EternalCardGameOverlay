@@ -1,0 +1,17 @@
+Executed Time: 9/13/2017 12:52:41 AM
+Notes: no binarize and yes resolution
+Time: 27 ms or 0.027 s Accuracy: 7 / 12
+Results:
+lcequake
+packhunt
+inspireobedience
+brilliantdiscovery
+pitfighter
+
+grenadincannoneer
+cepperhallshieldman
+
+sandglasssentinel
+aerialistskhopesh
+
+

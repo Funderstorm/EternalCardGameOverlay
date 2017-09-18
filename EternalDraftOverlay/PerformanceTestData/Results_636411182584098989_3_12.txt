@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:24:18 AM
+Notes: no binarize and yes resolution
+Time: 49 ms or 0.049 s Accuracy: 3 / 12
+Results:
+siappingbrushstalker
+praxisstranger
+
+wcabalbludgeoner
+
+
+xenanbanner
+
+
+tocktick
+
+
+

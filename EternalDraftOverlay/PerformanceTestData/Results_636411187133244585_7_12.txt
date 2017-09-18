@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:31:53 AM
+Notes: no binarize and yes resolution
+Time: 28 ms or 0.028 s Accuracy: 7 / 12
+Results:
+duelistsblade
+skywalkinstructor
+praxisbanner
+ecepterofnobility
+sialwartsilverwing
+xenanbanner
+vipersbite
+
+
+burningglaive
+sandviper
+
+

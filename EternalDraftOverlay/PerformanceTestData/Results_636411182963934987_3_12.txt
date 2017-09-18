@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:24:56 AM
+Notes: no binarize and yes resolution
+Time: 117 ms or 0.117 s Accuracy: 3 / 12
+Results:
+threaten
+
+
+forgewolf
+
+
+bringdown
+
+
+
+
+
+

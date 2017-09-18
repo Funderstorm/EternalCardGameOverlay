@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:36:26 AM
+Notes: no binarize and yes resolution
+Time: 29 ms or 0.029 s Accuracy: 8 / 12
+Results:
+minotaurambassador
+rebelsharpshooter
+dusthoofbrawler
+bladekinapprentice
+loyalwatchwing
+districtinfantry
+yetitroublemaker
+ihornedvorlunk
+execute
+vinspire
+tricksterscloak
+
+

@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:38:17 AM
+Notes: no binarize and yes resolution
+Time: 48 ms or 0.048 s Accuracy: 3 / 12
+Results:
+crownwatchdeserter
+
+
+vemeraldacolyte
+
+
+rebelsharpshooter
+
+
+stonescarbanner
+
+
+

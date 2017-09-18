@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:04:16 AM
+Notes: no binarize and yes resolution
+Time: 67 ms or 0.067 s Accuracy: 9 / 12
+Results:
+horngrinder
+gelchingbehemoth
+sandglasssentinel
+grenade
+umbrenthirster
+clanhero
+talondive
+aerialistskhopesh
+
+audaciousbandit
+pummel
+
+

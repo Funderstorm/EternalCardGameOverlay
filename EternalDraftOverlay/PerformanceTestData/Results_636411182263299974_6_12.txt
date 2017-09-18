@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:23:46 AM
+Notes: no binarize and yes resolution
+Time: 102 ms or 0.102 s Accuracy: 6 / 12
+Results:
+triggerhappy
+valkyriemilitant
+
+talirschoice
+inspireobedience
+
+lcebow
+copperhallherald
+
+auricbully
+
+
+

@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:30:08 AM
+Notes: no binarize and yes resolution
+Time: 50 ms or 0.05 s Accuracy: 6 / 12
+Results:
+rebelilluminator
+teleport
+
+torch
+felnbanner
+
+rebuke
+
+
+rally
+
+
+

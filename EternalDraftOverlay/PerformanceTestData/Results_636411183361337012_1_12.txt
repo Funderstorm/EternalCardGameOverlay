@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:25:36 AM
+Notes: no binarize and yes resolution
+Time: 252 ms or 0.252 s Accuracy: 1 / 12
+Results:
+foothillsalpha
+
+
+
+
+
+
+
+
+
+
+
+

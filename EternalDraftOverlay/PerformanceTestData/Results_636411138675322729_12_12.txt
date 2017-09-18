@@ -1,0 +1,17 @@
+Executed Time: 9/15/2017 11:11:07 PM
+Notes: no binarize and yes resolution
+Time: 9 ms or 0.009 s Accuracy: 12 / 12
+Results:
+relentlessgorehorn
+spikedbuckler
+smithshammer
+lumberinggruan
+younggun
+audaciousbandit
+slay
+skeeter
+packhunt
+alluringember
+swearvengeance
+clanhero
+

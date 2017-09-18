@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:02:16 AM
+Notes: no binarize and yes resolution
+Time: 154 ms or 0.154 s Accuracy: 3 / 12
+Results:
+horngrinder
+gelchingbehemoth
+sandglasssentinel
+
+
+clanhero
+
+
+
+
+
+
+

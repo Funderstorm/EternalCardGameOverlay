@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:27:18 AM
+Notes: no binarize and yes resolution
+Time: 28 ms or 0.028 s Accuracy: 9 / 12
+Results:
+kuricrunehammer
+dispel
+minotaurgrunt
+assemblyline
+scheme
+ornatekatana
+minotaurambassador
+toweringterrazon
+violentgust
+secondsight
+vboldadventurer
+
+

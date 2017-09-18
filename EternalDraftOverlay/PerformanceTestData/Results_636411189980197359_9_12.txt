@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:36:38 AM
+Notes: no binarize and yes resolution
+Time: 31 ms or 0.031 s Accuracy: 9 / 12
+Results:
+smugglersstash
+wisdomoftheelders
+itowertoppatrol
+fourthtreeelder
+lethrairanger
+scavengingvulture
+windshaper
+humbug
+
+graniteacolyte
+valkyrieaspirant
+
+

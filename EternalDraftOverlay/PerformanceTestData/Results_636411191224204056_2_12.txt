@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:38:42 AM
+Notes: no binarize and yes resolution
+Time: 186 ms or 0.186 s Accuracy: 2 / 12
+Results:
+aerialace
+
+
+hellfirerifle
+
+
+
+
+
+
+
+
+

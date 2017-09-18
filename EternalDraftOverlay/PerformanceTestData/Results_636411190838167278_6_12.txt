@@ -1,0 +1,17 @@
+Executed Time: 9/16/2017 12:38:03 AM
+Notes: no binarize and yes resolution
+Time: 53 ms or 0.053 s Accuracy: 6 / 12
+Results:
+crownwatchdeserter
+refresh
+
+alchemicalblast
+aerialace
+
+grenadindrone
+
+
+ornatekatana
+
+
+
