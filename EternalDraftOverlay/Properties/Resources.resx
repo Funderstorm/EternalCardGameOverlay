@@ -157,4 +157,7 @@
   <data name="Ranking_U_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Ranking_U_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="RescanButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\RescanButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

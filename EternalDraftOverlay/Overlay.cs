@@ -19,63 +19,28 @@ namespace EternalDraftOverlay
 
         private Dictionary<string, string> cardRankings;
 
-        private List<Node> Nodes;
-        float scalingFactor = 4f;
+        float scalingFactor = 8f;
 
-        private static Overlay instance;
-        public static Overlay Instance
-        {
-            get
-            {
-                return instance;
-            }
-        }
+        public static Overlay Instance { get; private set; }
 
 
         private Card[] Cards;
         private TesseractEngine ocrEngine;
         private Graphics formGraphics;
         private IntPtr EternalWindowPointer;
+        private Point RescanButtonLocation;
 
-        public Overlay(Dictionary<string, string> dict, List<Node> nodes = null)
+        public Overlay(Dictionary<string, string> dict)
         {
-            instance = this;
-            Nodes = nodes;
-            Point startingLocation = new Point(412, 125);
-            (int, int)  distanceRanking = (40, 44);
-            (int, int) distanceCardName = (-10, 148);
-            int distanceDown = 316;
-            int distanceRight = 223;
-            (int, int) cardNameSize = (152, 16);
-
+            Instance = this;
             cardRankings = dict;
+            scalingFactor = 4f;
 
             InitializeComponent();
 
-            Cards = new Card[12];
-            int k = 0;
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    var rankingToDisplayX = startingLocation.X + (i * distanceRight) + distanceRanking.Item1;
-                    var rankingToDisplayY = startingLocation.Y + (j * distanceDown) + distanceRanking.Item2;
-
-                    var textboxboundPositionX = startingLocation.X + (i * distanceRight) + distanceCardName.Item1;
-                    var textboxboundPositionY = startingLocation.Y + (j * distanceDown) + distanceCardName.Item2;
-
-                    var textboxRectangle = new Rectangle(textboxboundPositionX, textboxboundPositionY, cardNameSize.Item1, cardNameSize.Item2);
-                    var wholeCardRectangle = new Rectangle(388 + (i * distanceRight), 100 + (j * distanceDown), 184, 288);
-                    Cards[k] = new Card(string.Empty, new Point(rankingToDisplayX, rankingToDisplayY), textboxRectangle, wholeCardRectangle);
-                    k++;
-                }
-            }
-
             ocrEngine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default);
 
-            Process[] processes = Process.GetProcessesByName("Eternal");
-
-            Process p = processes.FirstOrDefault();
+            var p = Process.GetProcessesByName("Eternal").FirstOrDefault();
             if (p != null)
             {
                 EternalWindowPointer = p.MainWindowHandle;
@@ -83,19 +48,85 @@ namespace EternalDraftOverlay
                 RepositionForm();
 
                 IntPtr hhook = SetWinEventHook(EVENT_SYSTEM_CAPTURESTART, EVENT_SYSTEM_MINIMIZEEND, IntPtr.Zero, EternalWindowDelegate, Convert.ToUInt32(p.Id), 0, WINEVENT_OUTOFCONTEXT);
-                // this works
-                //IntPtr hhook = SetWinEventHook(EVENT_SYSTEM_CAPTURESTART, EVENT_SYSTEM_CAPTURESTART, IntPtr.Zero, EternalWindowDelegate, Convert.ToUInt32(p.Id), 0, WINEVENT_OUTOFCONTEXT);
             }
 
+            RescanButtonLocation = new Point(50, 75);
             //MaximizeEverything();
+            InitializeCardBoundaries();
 
             SetFormTransparent(this.Handle);
-
             SetTheLayeredWindowAttribute();
-
             formGraphics = this.CreateGraphics();
 
             ScanPage();
+        }
+
+        private void InitializeCardBoundaries()
+        {
+            RECT rect = new RECT();
+            GetWindowRect(EternalWindowPointer, ref rect);
+            var width = rect.Right - rect.Left;
+
+            (int x, int y) cardFrameStartingLocation;
+
+            (int x, int y) distanceToRanking;
+            (int x, int y) distanceToCardName;
+
+            (int down, int right) distanceBetweenCards;
+            (int x, int y) cardNameSize;
+            (int x, int y) totalCardSize;
+            
+
+            switch (width)
+            {
+                case 1286:
+                    distanceToRanking = (45, 40);
+                    distanceToCardName = (12, 134);
+                    cardNameSize = (112, 10);
+                    distanceBetweenCards = (234, 165);
+                    totalCardSize = (134, 216);
+                    cardFrameStartingLocation = (215, 77);
+                    break;
+                case 1926:
+                    distanceToRanking = (0, 0);;
+                    distanceToCardName = (0, 0);
+                    distanceBetweenCards = (316, 223);
+                    cardNameSize = (152, 16);
+                    totalCardSize = (184, 288);
+                    cardFrameStartingLocation = (388, 100);
+                    break;
+                case 160:
+                    throw new Exception("Cant init card boundaries bc program is minimized");
+                    break;
+                default:
+                    throw new Exception("Unsupported Window Size");
+            }
+
+            Cards = new Card[12];
+            int k = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    // the location of the ranking graphic to display on top of the card
+                    var rankingToDisplayX = cardFrameStartingLocation.x + (i * distanceBetweenCards.right) + distanceToRanking.x;
+                    var rankingToDisplayY = cardFrameStartingLocation.y + (j * distanceBetweenCards.down) + distanceToRanking.y;
+
+                    // the location of the card's text box
+                    var textboxboundPositionX = cardFrameStartingLocation.x + (i * distanceBetweenCards.right) + distanceToCardName.x;
+                    var textboxboundPositionY = cardFrameStartingLocation.y + (j * distanceBetweenCards.down) + distanceToCardName.y;
+
+                    var textboxRectangle = new Rectangle(textboxboundPositionX, textboxboundPositionY, cardNameSize.x, cardNameSize.y);
+                    var wholeCardRectangle = new Rectangle(
+                        cardFrameStartingLocation.x + (i * distanceBetweenCards.right),
+                        cardFrameStartingLocation.y + (j * distanceBetweenCards.down), 
+                        totalCardSize.x, 
+                        totalCardSize.y);
+
+                    Cards[k] = new Card(string.Empty, new Point(rankingToDisplayX, rankingToDisplayY), textboxRectangle, wholeCardRectangle);
+                    k++;
+                }
+            }
         }
 
         const uint EVENT_MIN = 0x00000001;
@@ -115,26 +146,40 @@ namespace EternalDraftOverlay
             switch (eventType)
             {
                 case EVENT_SYSTEM_MOVESIZEEND:
-                    instance.RepositionForm();
+                    Instance.RepositionForm();
                     break;
                 case EVENT_SYSTEM_MINIMIZESTART:
                     break;
                 case EVENT_SYSTEM_MINIMIZEEND:
                     break;
                 case EVENT_SYSTEM_CAPTURESTART:
-                    if (instance.CardIsSelected())
-                        instance.ClearAndRedrawPage();
+                    if (Instance.CardIsSelected())
+                        Instance.ClearAndRedrawPage();
+                    if (Instance.RescanSelected())
+                        Instance.ClearAndRedrawPage();
                     break;
             }
         }
 
         public bool CardIsSelected()
         {
+            var mouse = Cursor.Position;
+
             foreach(var card in Cards)
             {
-                if (card.WholeCardBounding.Contains(Cursor.Position.X, Cursor.Position.Y))
+                if (card.WholeCardBounding.Contains(mouse.X - this.Location.X, mouse.Y - this.Location.Y))
                     return true;
             }
+
+            return false;
+        }
+
+        public bool RescanSelected()
+        {
+            var mouse = Cursor.Position;
+
+            if (new Rectangle(RescanButtonLocation, EternalDraftOverlay.Properties.Resources.RescanButton.Size).Contains(mouse.X - this.Location.X, mouse.Y - this.Location.Y))
+                return true;
 
             return false;
         }
@@ -158,6 +203,7 @@ namespace EternalDraftOverlay
 
             ScanPage();
         }
+
         public void ScanPage()
         {
             BackgroundWorker tmpBw = new BackgroundWorker();
@@ -183,6 +229,7 @@ namespace EternalDraftOverlay
         {
             var watch = Stopwatch.StartNew();
             string processedTextResults = "";
+            string preProcessedTextResults = "";
             int hits = 0;
 
             BackgroundWorker worker = sender as BackgroundWorker;
@@ -199,12 +246,14 @@ namespace EternalDraftOverlay
                 //Image img22 = CaptureWindow(windowHandle);
                 Pix img = CaptureWindowPix(windowHandle);
 
-                img = img.ConvertRGBToGray();
+                img = img.ConvertRGBToGray(0.40f, 0.34f, 0.26f);
 
-                //img = img.BinarizeOtsuAdaptiveThreshold(2000, 2000, 0, 0, 0.0f);
-                //img = img.BinarizeSauvolaTiled()
+                //img = img.BinarizeOtsuAdaptiveThreshold(img.Width / 5, img.Height / 5, 10, 10, 0.1f);
+                // img = img.BinarizeSauvolaTiled();
                 //img = img.INVERT
+
                 img = img.Scale(scalingFactor, scalingFactor);
+                //img = img.BinarizeOtsuAdaptiveThreshold(img.Width / 5, img.Height / 5, 10, 10, 0.1f);
 
                 //img = img.UNSHARPMASK
                 //img = img.BinarizeOtsuAdaptiveThreshold(2000, 2000, 0, 0, 0.0f);
@@ -216,54 +265,42 @@ namespace EternalDraftOverlay
                 //Bitmap screenshotBitmap = PixConverter.ToBitmap(img);
                 //screenshotBitmap.SetResolution(dpiX, dpiY);
 
-                watch.Stop();
-                Console.WriteLine("Preprocess:" + watch.ElapsedMilliseconds + " ms");
-                watch.Reset();
-                watch.Start();
+                //DEBUG_PrintImage(img, "manualPreProcessing", watch);
 
                 for (int i = 0; i < 12; i++)
                 {
-                    //debug: draw textbox
-                    //formGraphics.DrawRectangle(new Pen(drawBrush_Pink), new Rectangle(textboxboundPositionX, textboxboundPositionY, cardNameSize.Item1, cardNameSize.Item2));
+                    //formGraphics.DrawRectangle(new Pen(new SolidBrush(Color.Pink)), Cards[i].WholeCardBounding);
+                    //formGraphics.DrawRectangle(new Pen(new SolidBrush(Color.Aqua)), Cards[i].TextboxBounding);
+                    //formGraphics.DrawRectangle(new Pen(new SolidBrush(Color.Bisque)), Cards[i].RankLocation.X, Cards[i].RankLocation.Y, 10, 10);
 
-                    //
-                    //Point startingLocation = new Point(388, 100);
-                    //int distanceDown = 316;
-                    //int distanceRight = 223;
-                    //(int, int)[] distance = { (0,0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 2) };
-                    //formGraphics.DrawRectangle(new Pen(new SolidBrush(Color.Pink)), new Rectangle(startingLocation.X + (distance[i].Item1 * distanceRight), startingLocation.Y + (distance[i].Item2 * distanceDown), 184, 288));
-                    //
+                    Rect textbox_Scaled = new Rect(
+                        Cards[i].TextboxBounding.X * (int)scalingFactor,
+                        Cards[i].TextboxBounding.Y * (int)scalingFactor,
+                        Cards[i].TextboxBounding.Width * (int)scalingFactor,
+                        Cards[i].TextboxBounding.Height * (int)scalingFactor);
 
-                    Rect textbox_Scaled = new Rect(Cards[i].TextboxBounding.X * (int)scalingFactor, Cards[i].TextboxBounding.Y * (int)scalingFactor, Cards[i].TextboxBounding.Width * (int)scalingFactor, Cards[i].TextboxBounding.Height * (int)scalingFactor);
-
-                    //using (Page processedImage = ocrEngine.Process(screenshotBitmap, testSandstorm_Scaled))
                     using (Page processedImage = ocrEngine.Process(img, textbox_Scaled))
                     {
+                        DEBUG_PrintImage(processedImage.GetThresholdedImage(), "lower rez (individual)" + i, watch);
+
                         var text = processedImage.GetText();
+                        preProcessedTextResults += text.Replace("\n", "") + Environment.NewLine;
                         text = CleanText(text);
                         processedTextResults += text + Environment.NewLine;
                         if (cardRankings.ContainsKey(text))
                         {
-                            watch.Stop();
-                            Console.WriteLine("Clean Match text:" + watch.ElapsedMilliseconds + " ms");
-                            watch.Reset();
-                            watch.Start();
-
                             Cards[i].Rank = cardRankings[text];
-                                        
                             hits++;
                         }
                         else if (!String.IsNullOrEmpty(text))
-                        {
-                            watch.Stop();
-                            Console.WriteLine("Clean Match text:" + watch.ElapsedMilliseconds + " ms");
-                            watch.Reset();
-                            watch.Start();
-
+                        { 
                             List<SymSpell.suggestItem> suggestions = null;
                             suggestions = SymSpell.Lookup(text, "", SymSpell.editDistanceMax);
                             if (suggestions.Count > 0)
+                            {
                                 Cards[i].Rank = cardRankings[suggestions.First().term];
+                                hits++;
+                            }
                             else
                                 Cards[i].Rank = "U";
                         }
@@ -279,7 +316,7 @@ namespace EternalDraftOverlay
 
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
-            OutputTestResults(elapsedMs, processedTextResults, hits);
+            OutputTestResults(elapsedMs, processedTextResults, hits, preProcessedTextResults);
         }
 
         private string CleanText(string input)
@@ -305,6 +342,7 @@ namespace EternalDraftOverlay
 
         private void DrawRanking(string rank, int x, int y)
         {
+            formGraphics.DrawImage(EternalDraftOverlay.Properties.Resources.RescanButton, RescanButtonLocation);
             Image img;
             switch (rank)
             {
@@ -352,11 +390,17 @@ namespace EternalDraftOverlay
                     break;
             }
 
+            
+
             if (img != null)
                 formGraphics.DrawImage(img, new Point(x, y));
+            else if (!String.IsNullOrEmpty(rank))
+            {
+                formGraphics.DrawString(rank, new Font("Arial", 32), new SolidBrush(Color.Red), new Point(x, y));
+            }
         }
 
-        private void OutputTestResults(long time, string results, int hits)
+        private void OutputTestResults(long time, string results, int hits, string preproccessedResults = null)
         {
             using (System.IO.StreamWriter file =
             new System.IO.StreamWriter(@"../../PerformanceTestData/Results_" + DateTime.Now.Ticks + "_" + hits + "_12.txt", true))
@@ -366,6 +410,7 @@ namespace EternalDraftOverlay
                 output += "Time: " + time + " ms or " + ((float)time / 1000f).ToString() + " s Accuracy: " + hits + " / 12" + Environment.NewLine;
                 output += "Results:" + Environment.NewLine;
                 output += results + Environment.NewLine;
+                output += preproccessedResults ?? "" + Environment.NewLine;
 
                 file.Write(output);
                 Console.Write(output);
@@ -766,287 +811,6 @@ namespace EternalDraftOverlay
         static extern bool SetLayeredWindowAttributes(IntPtr hwnd, uint crKey, byte bAlpha, uint dwFlags);
 
 
-        #endregion
-
-        #region UNUSED SHOULD DELETE BUT TOOK FOREVER TO FIND
-
-        //private void bw_DoWork(object sender, DoWorkEventArgs e)
-        //{
-        //    BackgroundWorker worker = sender as BackgroundWorker;
-
-        //    Size fullSize = getFullScreensSize();
-        //    Point topLeft = getTopLeft();
-
-        //    Process[] processes = Process.GetProcessesByName("Eternal");
-
-        //    Process p = processes.FirstOrDefault();
-        //    IntPtr windowHandle;
-        //    if (p != null)
-        //    {
-        //        windowHandle = p.MainWindowHandle;
-
-        //        using (TesseractEngine ocrEngine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
-        //        {
-        //            //Image img = CaptureWindow(windowHandle);
-        //            Pix img = CaptureWindowPix(windowHandle);
-
-        //            img = img.ConvertRGBToGray();
-        //            img = img.BinarizeOtsuAdaptiveThreshold(2000, 2000, 0, 0, 0.0f);
-        //            //img = img.INVERT
-        //            img = img.Scale(scalingFactor, scalingFactor);
-
-        //            //img = img.UNSHARPMASK
-        //            //img = img.BinarizeOtsuAdaptiveThreshold(2000, 2000, 0, 0, 0.0f);
-        //            //img = img.SELECTBYSIZE // removeNoise
-
-        //            var dpiX = 300;
-        //            var dpiY = 300;
-
-        //            Bitmap screenshotBitmap = PixConverter.ToBitmap(img);
-        //            screenshotBitmap.SetResolution(dpiX, dpiY);
-
-        //            //Bitmap screenshotBitmap = new Bitmap((int)(intermediate.Width * dpiX / intermediate.HorizontalResolution), (int)(intermediate.Height * dpiY / intermediate.VerticalResolution));
-        //            //screenshotBitmap.SetResolution(dpiX, dpiY);
-        //            //Graphics g = Graphics.FromImage(screenshotBitmap);
-        //            //g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bicubic;
-        //            //g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-        //            //g.DrawImage(intermediate, 0, 0);
-        //            //g.Dispose();
-
-        //            //Bitmap screenshotBitmap = new Bitmap(img, new Size(img.Width * scalingFactor, img.Height * scalingFactor));
-        //            //Bitmap greyscaleBitmap = MakeGrayscale3(screenshotBitmap);
-
-        //            string processedTextResults = "";
-
-        //            using (Graphics formGraphics = this.CreateGraphics())
-        //            {
-        //                Font drawFont = new Font("Arial", 36);
-        //                SolidBrush drawBrush = new SolidBrush(Color.Black);
-
-        //                img.Save("pix_test.bmp");
-        //                screenshotBitmap.Save("original.bmp");
-        //                //greyscaleBitmap.Save("greyscale.bmp");
-
-        //                for (int i = 0; i < 4; i++)
-        //                {
-        //                    for (int j = 0; j < 3; j++)
-        //                    {
-
-        //                        var textboxboundPositionX = startingLocation.X + (i * distanceRight);
-        //                        var textboxboundPositionY = startingLocation.Y + (j * distanceDown);
-
-        //                        Rect testSandstorm_Scaled = new Rect(textboxboundPositionX * (int)scalingFactor, textboxboundPositionY * (int)scalingFactor, cardNameSize.Item1 * (int)scalingFactor, cardNameSize.Item2 * (int)scalingFactor);
-
-        //                        //using (Page processedImage = ocrEngine.Process(img, testSandstorm_Scaled))
-        //                        using (Page processedImage = ocrEngine.Process(screenshotBitmap, testSandstorm_Scaled))
-        //                        {
-        //                            var rankingX = startingLocation.X + (i * distanceRight) + distanceRanking.Item1;
-        //                            var rankingY = startingLocation.Y + (j * distanceDown) - distanceRanking.Item2;
-
-        //                            var text = processedImage.GetText();
-        //                            processedTextResults += text + System.Environment.NewLine;
-        //                            text = text.Trim();
-        //                            if (cardRankings.ContainsKey(text))
-        //                                formGraphics.DrawString(cardRankings[text], drawFont, drawBrush, rankingX, rankingY);
-        //                            else
-        //                                formGraphics.DrawString("U", drawFont, drawBrush, rankingX, rankingY);
-        //                        }
-        //                        //formGraphics.DrawRectangle(new Pen(drawBrush), new Rectangle(startingLocation.X + (i * distanceRight), startingLocation.Y + (j * distanceDown), cardNameSize.Item1, cardNameSize.Item2));
-
-        //                    }
-        //                }
-
-
-        //            }
-        //        }
-        //    }
-        //}
-
-
-        //private void CaptureData(Bitmap bmp)
-        //{
-        //    (int, int)[] pixelsToTest = { (30, 30), (40, 40), (50, 50), (60, 60), (70, 70), (80, 80), (90, 90), (100, 100), (110, 110), (80, 60), (90, 50) };
-        //    string[] names = { "catburglar", "clanhero", "topazdrake", "brashshorthorn", "sparkbot", "sanguinesword", "snowcrustyeti", "copperhallherald", "envelop", "valkyrielinebreaker", "aviraxfamiliar", "excavationassistant" };
-
-        //    string capturedData = "";
-        //    for (int i = 0; i < 4; i++)
-        //    {
-        //        for (int j = 0; j < 3; j++)
-        //        {
-        //            capturedData += names[i + j] + ":";
-        //            for (int currentTestingIndex = 0; currentTestingIndex < pixelTestCount; currentTestingIndex++)
-        //            {
-        //                var colorX = startingLocation.X + (i * distanceRight) + distanceCardArt.Item1 + pixelsToTest[currentTestingIndex].Item1;
-        //                var colorY = startingLocation.Y + (j * distanceDown) + distanceCardArt.Item2 + pixelsToTest[currentTestingIndex].Item2;
-        //                Color clr = bmp.GetPixel(colorX, colorY);
-
-        //                capturedData += clr.R + "," + clr.G + "," + clr.B + ";";
-        //            }
-        //            capturedData = capturedData.TrimEnd(';') + Environment.NewLine;
-        //        }
-        //    }
-
-        //    System.IO.File.WriteAllText(@"../../CapturedData.txt", capturedData);
-        //}
-
-
-        //private void bw_DEBUG_PixelComparison(object sender, DoWorkEventArgs e)
-        //{
-        //    var watch = Stopwatch.StartNew();
-        //    BackgroundWorker worker = sender as BackgroundWorker;
-
-        //    Process[] processes = Process.GetProcessesByName("Eternal");
-
-        //    Process p = processes.FirstOrDefault();
-        //    IntPtr windowHandle;
-        //    if (p != null)
-        //    {
-        //        windowHandle = p.MainWindowHandle;
-
-        //        Image img = CaptureWindow(windowHandle);
-
-        //        using (Graphics formGraphics = this.CreateGraphics())
-        //        {
-        //            Font drawFont = new Font("Arial", 36);
-        //            SolidBrush drawBrush = new SolidBrush(Color.Black);
-
-
-        //            //bmp.Save("wtf");
-        //            //(int,int)[] pixelsToTest = {(30, 30), (40, 40), (50, 50), (60, 60), (70, 70), (80, 80), (90, 90), (100, 100), (110, 110), (80, 60)/*, (90, 50)*/ };
-        //            //(int, int, int)[] tmp = { (97, 79, 97), (122,100,109), (162,127,122), (77,68,87), (93,68,85), (64,41,61), (60,45,68), (67,45,67), (64,48,69), (191,167,176) };
-        //            //int highestK = 0;
-        //            //for (int i=0; i< 250; i++)
-        //            //{
-        //            //    for (int j = 0; j < 300; j++)
-        //            //    {
-        //            //        for (int k = 0; k < 10; k++)
-        //            //        {
-        //            //            Color clr = bmp.GetPixel(i + 350 + pixelsToTest[k].Item1, j + 50 + pixelsToTest[k].Item2);
-        //            //            if (clr.R == tmp[k].Item1 && clr.G == tmp[k].Item2 && clr.B == tmp[k].Item3)
-        //            //            {
-        //            //                if (k > highestK)
-        //            //                    highestK = k;
-        //            //            }
-        //            //            else
-        //            //                break;
-        //            //        }
-        //            //    }
-        //            //}
-        //            //;
-
-        //            //using (Bitmap bmp = new Bitmap(img))
-        //            using (Bitmap bmp = new Bitmap(@"../../PerformanceTestData/PrintOfBMP-Modified24.bmp"))
-        //            {
-        //                for (int i = 0; i < 4; i++)
-        //                {
-        //                    for (int j = 0; j < 3; j++)
-        //                    {
-        //                        // Draw box around card art for debugging
-        //                        //formGraphics.DrawRectangle(new Pen(new SolidBrush(Color.Pink)), new Rectangle(startingLocation.X + (i * distanceRight) + distanceCardArt.Item1, startingLocation.Y + (j * distanceDown) + distanceCardArt.Item2, cardArtSize.Item1, cardArtSize.Item2));
-        //                        //formGraphics.DrawRectangle(new Pen(new SolidBrush(Color.Pink)), new Rectangle(startingLocation.X + (i * distanceRight), startingLocation.Y + (j * distanceDown), cardArtSize.Item1, cardArtSize.Item2));
-        //                        //formGraphics.DrawRectangle(new Pen(new SolidBrush(Color.Pink)), new Rectangle(startingLocation.X + (i * distanceRight), startingLocation.Y + (j * distanceDown), 1, 1));
-
-        //                        //formGraphics.DrawRectangle(new Pen(new SolidBrush(Color.Pink)), new Rectangle(415 + (i * distanceRight + i * 1), 123 + (j * distanceDown), cardArtSize.Item1, cardArtSize.Item2));
-
-        //                        // Store the pixel data of the current card we are looking at to look up the card name later
-        //                        (int, int)[] pixelsToTest = { (30, 30), (40, 40), (50, 50), (60, 60), (70, 70), (80, 80), (90, 90), (100, 100), (110, 110), (80, 60), (90, 50) };
-
-        //                        (int, int, int)[] currentPixelData = new(int, int, int)[10];
-        //                        for (int currentTestingIndex = 0; currentTestingIndex < pixelTestCount; currentTestingIndex++)
-        //                        {
-        //                            var colorX = startingLocation.X + (i * distanceRight) + distanceCardArt.Item1 + pixelsToTest[currentTestingIndex].Item1;
-        //                            var colorY = startingLocation.Y + (j * distanceDown) + distanceCardArt.Item2 + pixelsToTest[currentTestingIndex].Item2;
-        //                            Color clr = bmp.GetPixel(colorX, colorY);
-
-        //                            currentPixelData[currentTestingIndex] = (clr.R, clr.G, clr.B);
-        //                        }
-
-        //                        //CaptureData(bmp);
-
-        //                        // Find the name of the card by comparing the pixel data of the screencapture with the precaptured pixel data
-        //                        var nameOfCard = "";
-        //                        foreach (var node in Nodes)
-        //                        {
-        //                            bool isMatch = true;
-        //                            for (int z = 0; z < pixelTestCount; z++)
-        //                            {
-        //                                if (node.PixelData[z].Item1 != currentPixelData[z].Item1 || node.PixelData[z].Item2 != currentPixelData[z].Item2 || node.PixelData[z].Item3 != currentPixelData[z].Item3)
-        //                                    isMatch = false;
-        //                            }
-        //                            if (isMatch)
-        //                            {
-        //                                nameOfCard = node.Name;
-        //                                break;
-        //                            }
-        //                        }
-
-        //                        // Now look up the card name in the ranking dictionary and Display the Ranking in the UI
-        //                        var rankingToDisplayX = startingLocation.X + (i * distanceRight) + distanceRanking.Item1;
-        //                        var rankingToDisplayY = startingLocation.Y + (j * distanceDown) + distanceRanking.Item2;
-
-        //                        if (cardRankings.ContainsKey(nameOfCard))
-        //                        {
-        //                            formGraphics.DrawString(cardRankings[nameOfCard], drawFont, drawBrush, rankingToDisplayX, rankingToDisplayY);
-        //                        }
-        //                        else
-        //                        {
-        //                            formGraphics.DrawString("U", drawFont, drawBrush, rankingToDisplayX, rankingToDisplayY);
-        //                        }
-        //                    }
-        //                }
-        //                //bmp.Save(@"../../PerformanceTestData/PrintOfBMP.bmp");
-        //            }
-        //        }
-        //    }
-
-        //    watch.Stop();
-        //    var elapsedMs = watch.ElapsedMilliseconds;
-        //    //OutputTestResults(elapsedMs, "", 0);
-        //}
-
-
-        bool ColorsAreClose(Color a, Color z, int threshold = 50)
-        {
-            int r = (int)a.R - z.R,
-                g = (int)a.G - z.G,
-                b = (int)a.B - z.B;
-            return (r * r + g * g + b * b) <= threshold * threshold;
-        }
-
-        public static Bitmap MakeGrayscale3(Bitmap original)
-        {
-            //create a blank bitmap the same size as original
-            Bitmap newBitmap = new Bitmap(original.Width, original.Height);
-
-            //get a graphics object from the new image
-            Graphics g = Graphics.FromImage(newBitmap);
-
-            //create the grayscale ColorMatrix
-            ColorMatrix colorMatrix = new ColorMatrix(
-               new float[][]
-               {
-                     new float[] {.3f, .3f, .3f, 0, 0},
-                     new float[] {.59f, .59f, .59f, 0, 0},
-                     new float[] {.11f, .11f, .11f, 0, 0},
-                     new float[] {0, 0, 0, 1, 0},
-                     new float[] {0, 0, 0, 0, 1}
-               });
-
-            //create some image attributes
-            ImageAttributes attributes = new ImageAttributes();
-
-            //set the color matrix attribute
-            attributes.SetColorMatrix(colorMatrix);
-
-            //draw the original image on the new image
-            //using the grayscale color matrix
-            g.DrawImage(original, new Rectangle(0, 0, original.Width, original.Height),
-               0, 0, original.Width, original.Height, GraphicsUnit.Pixel, attributes);
-
-            //dispose the Graphics object
-            g.Dispose();
-            return newBitmap;
-        }
         #endregion
     }
 }

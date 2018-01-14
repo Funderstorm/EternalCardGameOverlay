@@ -1,0 +1,931 @@
+accelerated evolution;5.0
+crystallize;5.0
+eilyn, clan mother;5.0
+statuary maiden;5.0
+thunderstrike dragon;5.0
+
+amilli, cloudmarshal;4.5
+black-sky harbinger;4.5
+cirso, the great glutton;4.5
+crystalline chalice;4.5
+deepforged plate;4.5
+eye of winter;4.5
+general izalio;4.5
+ijin, imperial armorer;4.5
+impending doom;4.5
+inquisitor makto;4.5
+jekk, hunted fugitive;4.5
+knight-chancellor siraf;4.5
+kothon, the far-watcher;4.5
+marisen, the eldest;4.5
+memory dredger;4.5
+mystic ascendant;4.5
+paladin oathbook;4.5
+predatory carnosaur;4.5
+rimescale draconus;4.5
+rolant's honor guard;4.5
+silverwing commander;4.5
+sky terror;4.5
+the great parliament;4.5
+valkyrie enforcer;4.5
+valkyrie wings;4.5
+waystone infuser;4.5
+worldbearer behemoth;4.5
+xenan obelisk;4.5
+zelia, the vain;4.5
+
+adaptive predator;4.0
+ageless mentor;4.0
+annihilate;4.0
+archive curator;4.0
+ashara, the deadshot;4.0
+augmented form;4.0
+ayan, the abductor;4.0
+bloodletter;4.0
+cloudsnake harrier;4.0
+cobalt monument;4.0
+crownwatch quartermaster;4.0
+crownwatch traitor;4.0
+deadly confrontation;4.0
+deathstrike;4.0
+deranged dinomancer;4.0
+diogo malaga;4.0
+eilyn's frostrider;4.0
+explorer emeritus;4.0
+feeding time;4.0
+flamestoker;4.0
+fourth-tree elder;4.0
+hammer of might;4.0
+harsh rule;4.0
+heart of the vault;4.0
+icaria, the liberator;4.0
+knucklebones;4.0
+leave a witness;4.0
+lethrai falchion;4.0
+malediction reader;4.0
+mistveil drake;4.0
+navani, warsinger;4.0
+nostrix, lord of visions;4.0
+pearlescent drake;4.0
+permafrost;4.0
+pillar of amar;4.0
+pouncing drake;4.0
+rakano sheriff;4.0
+reality warden;4.0
+rindra, the duskblade;4.0
+rolant's fist;4.0
+rooftop vigilante;4.0
+sandstorm titan;4.0
+scraptank;4.0
+shogun’s scepter;4.0
+slay;4.0
+slimespitter slug;4.0
+snowcrush animist;4.0
+soulfire drake;4.0
+stand together;4.0
+steelbound dragon;4.0
+steelfang chakram;4.0
+steward of the past;4.0
+stonescar sneak;4.0
+strength of the pack;4.0
+tinker dronedropper;4.0
+torgov, icecap trader;4.0
+twinbrood sauropod;4.0
+unseen commando;4.0
+vadius, clan father;4.0
+valkyrie spireguard;4.0
+vanquish;4.0
+vara, fate-touched;4.0
+vodakhan, temple speaker;4.0
+vodakhan’s staff;4.0
+worldpyre phoenix;4.0
+
+amber monument;3.5
+ancient terrazon;3.5
+ashara, ruthless assasin;3.5
+auric record keeper;3.5
+auric runehammer;3.5
+awakened student;3.5
+bandit queen;3.5
+banish;3.5
+beastcaller’s amulet;3.5
+bladekin apprentice;3.5
+blistersting wasp;3.5
+cabal countess;3.5
+cannonbearer;3.5
+challenge by law;3.5
+champion of chaos;3.5
+champion of glory;3.5
+champion of mystery;3.5
+copperhall elite;3.5
+curiox, the collector;3.5
+daring pioneer;3.5
+desert marshal;3.5
+duelist’s blade;3.5
+duskwalker;3.5
+elias, the broken wing;3.5
+execute;3.5
+extinguish;3.5
+extract;3.5
+flame blast;3.5
+frenzied omnivore;3.5
+frontier confessor;3.5
+great-kiln titan;3.5
+groundbreaker;3.5
+hammer of authority;3.5
+hatchery hunter;3.5
+hotbarrel revolver;3.5
+humbug swarm;3.5
+hunting pteriax;3.5
+iceberg warchief;3.5
+infernal tyrant;3.5
+jotun hurler;3.5
+kaleb, reborn;3.5
+karmic guardian;3.5
+katra, the devoted;3.5
+lida, most skilled;3.5
+magus of the mist;3.5
+marisen’s disciple;3.5
+midnight gale;3.5
+minotaur duelist;3.5
+minotaur lighthoof;3.5
+molot & nakova;3.5
+molten fist;3.5
+morningstar;3.5
+mortar;3.5
+nesting avisaur;3.5
+nightmaw, sight unseen;3.5
+obliterate;3.5
+outlands sniper;3.5
+parapet sentry;3.5
+peacekeeper's prod;3.5
+plague;3.5
+plated goliath;3.5
+praxis displacer;3.5
+pteriax hatchling;3.5
+purify;3.5
+rakano outlaw;3.5
+rebel illuminator;3.5
+regent's blade;3.5
+rhinarc huntpack;3.5
+rolant, the iron fist;3.5
+sandbinder sentinel;3.5
+sapphire dragon;3.5
+scorpion wasp;3.5
+serasaur bull;3.5
+shadowlands tyrant;3.5
+shatterglass mage;3.5
+shelterwing rider;3.5
+silverwing avenger;3.5
+skycrag wyvarch;3.5
+soaring stranger;3.5
+stonescar scrapper;3.5
+suffocate;3.5
+thudrock, arctic artisan;3.5
+time weaver;3.5
+tinker overseer;3.5
+tomb protector;3.5
+torch;3.5
+towering stranger;3.5
+tranquil scholar;3.5
+umbren reaper;3.5
+valkyrie arcanist;3.5
+valkyrie denouncer;3.5
+venomspine hydra;3.5
+vicious highwayman;3.5
+watcher of the big ones;3.5
+whirling duo;3.5
+whispering wind;3.5
+xenan initiation;3.5
+
+aerialist trainer;3.0
+ageless sentinel;3.0
+amber acolyte;3.0
+ancient defenses;3.0
+argenport instigator;3.0
+auric sentry;3.0
+bartholo, the seducer;3.0
+battlefield scavenger;3.0
+beckoning lumen;3.0
+borderlands waykeeper;3.0
+brightmace paladin;3.0
+cat burglar;3.0
+ceremonial mask;3.0
+champion of cunning;3.0
+champion of wisdom;3.0
+clan hero;3.0
+cobalt acolyte;3.0
+combrei healer;3.0
+copperhall cudgel;3.0
+copperhall marshal;3.0
+crests;3.0
+crownwatch cavalry;3.0
+crownwatch deserter;3.0
+dark return;3.0
+devious drone;3.0
+direwood prowler;3.0
+dragonbreath;3.0
+dreamsnatcher;3.0
+eilyn’s choice;3.0
+elder’s feather;3.0
+emerald monument;3.0
+emerald ring;3.0
+entrapment;3.0
+evelina, valley searcher;3.0
+failed reflection;3.0
+false prince;3.0
+fearless yeti;3.0
+feln bloodcaster;3.0
+finest hour;3.0
+freewing glider;3.0
+furnace mage;3.0
+gearcruncher;3.0
+gilded glaive;3.0
+gorgon swiftblade;3.0
+granite acolyte;3.0
+grinva, judge of battles;3.0
+gun down;3.0
+horsesnatcher bat;3.0
+ice sprite;3.0
+inquisitor's halberd;3.0
+insistent automaton;3.0
+into the furnace;3.0
+jarall iceheart;3.0
+jarrall’s frostkin;3.0
+jotun cyclops;3.0
+jotun feast-caller;3.0
+journeyman armorer;3.0
+kyojun, grand shugo;3.0
+last stand at the gate;3.0
+lethrai nightblade;3.0
+lumen defender;3.0
+lumen reclaimer;3.0
+lunar magus;3.0
+marshal ironthorn;3.0
+milos izalio;3.0
+miner's musket;3.0
+minotaur oathkeeper;3.0
+minsod, the peerless;3.0
+miris nightshade;3.0
+moonlit gargoyle;3.0
+nocturnal observer;3.0
+obrak, the feaster;3.0
+obsidian golem;3.0
+oni ronin;3.0
+order of the spire;3.0
+polymorph;3.0
+pyroknight;3.0
+rapid shot;3.0
+rebel sharpshooter;3.0
+recycler;3.0
+reinvigorate;3.0
+reliquary raider;3.0
+rolant’s choice;3.0
+sand viper;3.0
+seasoned spelunker;3.0
+seek power;3.0
+serpent trainer;3.0
+shadowlands bonepicker;3.0
+shogun of the wastes;3.0
+silverwing familiar;3.0
+sindok, rage incarnate;3.0
+skyrider vanguard;3.0
+skywalk enforcer;3.0
+skywalk instructor;3.0
+slushdumper;3.0
+smuggler's stash;3.0
+snow pelting;3.0
+spire chaplain;3.0
+spirit guide;3.0
+spiritblade stalker;3.0
+starsteel daisho;3.0
+steward of prophecy;3.0
+stonescar maul;3.0
+stonescar sawed-off;3.0
+storm lynx;3.0
+stormcrasher;3.0
+strategize;3.0
+street leecher;3.0
+streetwise informant;3.0
+striking snake formation;3.0
+striped araktodon;3.0
+sureshot;3.0
+sword of icaria;3.0
+talir, unbound;3.0
+throne warden;3.0
+touch of the umbren;3.0
+towering terrazon;3.0
+trail maker;3.0
+twilight hunt;3.0
+twilight raptor;3.0
+unstable form;3.0
+valkyrie harvester;3.0
+victor's cry;3.0
+voprex, the great ruin;3.0
+warband chieftain;3.0
+windshaper;3.0
+withering witch;3.0
+
+alchemical blast;2.5
+all influence strangers;2.5
+amethyst acolyte;2.5
+amethyst monument;2.5
+argenport ringmaster;2.5
+auric bully;2.5
+auric vigilante;2.5
+avirax familiar;2.5
+awakened sentinel;2.5
+backpacker's machete;2.5
+baying serasaur;2.5
+bellowing thunderfoot;2.5
+bereaved stranger;2.5
+blackguard sidearm;2.5
+blinkwolf;2.5
+bloodcall invoker;2.5
+bold adventurer;2.5
+bolster;2.5
+bring down;2.5
+cabal cutthroat;2.5
+call the ancients;2.5
+champion of fury;2.5
+champion of progress;2.5
+champion of vengeance;2.5
+claw of the first dragon;2.5
+clockroach;2.5
+copper conduit;2.5
+copperhall porter;2.5
+crackshot fugitive;2.5
+crownwatch paladin;2.5
+dangerous bargain;2.5
+darkveil agent;2.5
+determined stranger;2.5
+devastating setback;2.5
+direwood beastcaller;2.5
+disassembler;2.5
+dispel;2.5
+district infantry;2.5
+dune phantom;2.5
+east-wind herald;2.5
+fearless nomad;2.5
+first-shot rioter;2.5
+fished dinoch;2.5
+flash freeze;2.5
+foraging sauropod;2.5
+frontline cyclops;2.5
+gorgon fanatic;2.5
+grenadin bellower;2.5
+grenadin drone;2.5
+grim stranger;2.5
+hair-trigger stranger;2.5
+healer’s cloak;2.5
+hellfire oni;2.5
+hideout pistol;2.5
+highbranch sentry;2.5
+highwind glider;2.5
+hooru fledgling;2.5
+hunter’s harpoon;2.5
+iceberg mason;2.5
+initiate of the sands;2.5
+jack's knife;2.5
+jotun punter;2.5
+lastlight druid;2.5
+lawman's sidearm;2.5
+lethrai ranger;2.5
+levitate;2.5
+lightning storm;2.5
+lightning strike;2.5
+longhorn sergeant;2.5
+longshot marksman;2.5
+lumen shepherd;2.5
+magma javelin;2.5
+minotaur grunt;2.5
+mithril mace;2.5
+noble firemane;2.5
+nocturnal creeper;2.5
+oasis seeker;2.5
+oblivion spike;2.5
+oni cavediver;2.5
+ornate katana;2.5
+plated demolisher;2.5
+ravenous thornbeast;2.5
+recurring nightmare;2.5
+relentless gorehorn;2.5
+repulsive gorger;2.5
+rock carapace;2.5
+rockslide;2.5
+roosting owl;2.5
+ruincrawler yeti;2.5
+sandstorm;2.5
+scaletender;2.5
+scourstone sentinel;2.5
+scouting party;2.5
+shielded shortbarrel;2.5
+silverwing smith;2.5
+skyward seer;2.5
+slope sergeant;2.5
+slumbering stone;2.5
+spark hatcher;2.5
+sparring partner;2.5
+staff of stories;2.5
+stalwart shield;2.5
+stampede driver;2.5
+stonepowder alchemist;2.5
+stonescar leviathan;2.5
+stormcaller;2.5
+sword of the sky king;2.5
+talir, who sees beyond;2.5
+talir's intervention;2.5
+talon of nostrix;2.5
+tandem watchwing;2.5
+tax collector;2.5
+tireless stranger;2.5
+toppletower;2.5
+towertop patrol;2.5
+trickster’s cloak;2.5
+triggerman;2.5
+tundra explorer;2.5
+unpredictable outlaw;2.5
+vainglory patrol;2.5
+valkyrie bodyguard;2.5
+valkyrie justiciar;2.5
+valkyrie militant;2.5
+vara’s choice;2.5
+vara's intervention;2.5
+violent gust;2.5
+whispers in the void;2.5
+winter's grasp;2.5
+xenan cupbearer;2.5
+xenan guardian;2.5
+yeti furflinger;2.5
+yeti snowslinger;2.5
+yeti troublemaker;2.5
+
+aerial attendant;2.0
+agile deathjaw;2.0
+all banners;2.0
+alu, death-dreamer;2.0
+amaran archaeologist;2.0
+amber waystone;2.0
+amethyst waystone;2.0
+argenport soldier;2.0
+assembly line;2.0
+bisma, revered elder;2.0
+brash shorthorn;2.0
+burn out;2.0
+cabal bludgeoner;2.0
+centaur raidleader;2.0
+charchain flail;2.0
+clutchmate;2.0
+coalscrounger;2.0
+cobalt waystone;2.0
+copperhall herald;2.0
+crafty yeti;2.0
+crownwatch longsword;2.0
+crownwatch press-gang;2.0
+curfew enforcement;2.0
+curiox, insatiable seeker;2.0
+darkbolt;2.0
+dawnwalker;2.0
+deepwood ranger;2.0
+desperado;2.0
+dormant sentinel;2.0
+duskcaller;2.0
+eilyn's intervention;2.0
+emerald waystone;2.0
+field captain;2.0
+final-shot rioter;2.0
+flashy duelist;2.0
+forsworn stranger;2.0
+gear master;2.0
+granite waystone;2.0
+ground crew;2.0
+heroic bravo;2.0
+hipshot;2.0
+horned vorlunk;2.0
+improvised rubbler;2.0
+infused strike;2.0
+ironclad oath;2.0
+lurking sanguar;2.0
+monolith guardian;2.0
+moondial;2.0
+novice herdrider;2.0
+oni quartermaster;2.0
+ornamental daggers;2.0
+outlands brute;2.0
+piercing shot;2.0
+powderkeg rider;2.0
+predator’s instinct;2.0
+prosecutor-at-arms;2.0
+pyre adept;2.0
+rakano artisan;2.0
+rampage;2.0
+refresh;2.0
+renegade valkyrie;2.0
+righteous fury;2.0
+rolant's intervention;2.0
+ruby catalyst;2.0
+runic revolver;2.0
+ruthless stranger;2.0
+sauropod wrangler;2.0
+savage stranger;2.0
+scaly gruan;2.0
+scrap hound;2.0
+serene excavator;2.0
+shadowlands guide;2.0
+shieldsmith;2.0
+shimmerpack;2.0
+silverwing rallier;2.0
+skysnapper;2.0
+sleeping draught;2.0
+sleepless night;2.0
+snowcrust yeti;2.0
+spellshield architect;2.0
+static bolt;2.0
+storm glider;2.0
+strength of many;2.0
+surveying mantasaur;2.0
+teleport;2.0
+tempered sentinel;2.0
+temple raider;2.0
+timeworn sentinel;2.0
+twinning ritual;2.0
+unchecked rage;2.0
+warhelm;2.0
+west-wind herald;2.0
+xenan cultist;2.0
+xenan destroyer;2.0
+yeti sage;2.0
+yeti windflyer;2.0
+
+aerial ace;1.5
+affliction;1.5
+audacious bandit;1.5
+barbarian camp;1.5
+barkeep's friend;1.5
+battleblur centaur;1.5
+battle-tested stranger;1.5
+blind storyteller;1.5
+blood beetle;1.5
+cabal recruiter;1.5
+callous survivalist;1.5
+censari brigand;1.5
+champion of impulse;1.5
+combust;1.5
+copperhall shieldman;1.5
+cover of darkness;1.5
+cowardice;1.5
+cripple;1.5
+crownwatch legionnaire;1.5
+cryptic etchings;1.5
+cutbrush cartographer;1.5
+dark wisp;1.5
+darkclaw ravager;1.5
+devour;1.5
+diplomatic seal;1.5
+disjunction;1.5
+drifting death;1.5
+eilyn, queen of the wilds;1.5
+enlightened stranger;1.5
+family charter;1.5
+fencing master;1.5
+granite monument;1.5
+guerrilla fighter;1.5
+hatecleaver;1.5
+headsman's axe;1.5
+hero of the people;1.5
+hoof slash;1.5
+humble instructor;1.5
+icebow;1.5
+idol of destran;1.5
+inspire obedience;1.5
+intriguing ancient;1.5
+jump kick;1.5
+knifejack;1.5
+lifedrinker;1.5
+maimed watchwing;1.5
+meditation trainer;1.5
+mirror image;1.5
+on the hunt;1.5
+oni gunwright;1.5
+powderglider;1.5
+premonition wisp;1.5
+prickly grenadin;1.5
+pummel;1.5
+rabblerouser;1.5
+rebuke;1.5
+reunite;1.5
+ridgeline watcher;1.5
+rise to the challenge;1.5
+safe return;1.5
+sandspitter;1.5
+scavenging vulture;1.5
+showdown;1.5
+skeeter;1.5
+skycrag huntsman;1.5
+snapping brushstalker;1.5
+soaring guard;1.5
+sparkbot;1.5
+spiked buckler;1.5
+steady marshal;1.5
+stella, the shotcaller;1.5
+stonescar magus;1.5
+subvert;1.5
+swift stranger;1.5
+swindle;1.5
+thunderhoof warrior;1.5
+town watchman;1.5
+treasury guard;1.5
+trusty revolver;1.5
+tumblebang;1.5
+unseen agent;1.5
+wandering forge;1.5
+wild rider;1.5
+wisdom of the elders;1.5
+
+accelerated impact;1.0
+aerialist's khopesh;1.0
+amaran camel;1.0
+amber ring;1.0
+ancient lore;1.0
+arachnophobia;1.0
+back-alley bouncer;1.0
+boltcrafter shaman;1.0
+bronze cuirass;1.0
+cabal rogue;1.0
+calderan gunsmith;1.0
+caltrops;1.0
+channel the tempest;1.0
+cloud of ash;1.0
+cloudsnake breeder;1.0
+cloudsnake hatchling;1.0
+cloudsnake saddle;1.0
+combrei magister;1.0
+copperhall recruit;1.0
+crowd favorite;1.0
+crown of possibilities;1.0
+detain;1.0
+dig site;1.0
+direfang spider;1.0
+direwood rampager;1.0
+disciplined amanera;1.0
+dusthoof brawler;1.0
+eager owlet;1.0
+elysian pathfinder;1.0
+elysian trailblazer;1.0
+emerald spear;1.0
+emerging colossus;1.0
+encroaching darkness;1.0
+excavation assistant;1.0
+farplace finder;1.0
+ferocious stranger;1.0
+fevered scout;1.0
+finback komonat;1.0
+find the way;1.0
+firemane cub;1.0
+flight lieutenant;1.0
+foothills alpha;1.0
+fortunate stranger;1.0
+friendly wisp;1.0
+gloaming wisp;1.0
+granite ring;1.0
+grenade;1.0
+gunrustler;1.0
+haunting scream;1.0
+heavy axe;1.0
+herald’s song;1.0
+hissing spiketail;1.0
+hooru envoy;1.0
+horizon seeker;1.0
+horngrinder;1.0
+iceknuckle jotun;1.0
+inspire;1.0
+jawbone hatchet;1.0
+jotun warrior;1.0
+kaleb, uncrowned prince;1.0
+kaleb’s choice;1.0
+kaleb's intervention;1.0
+kennelmaster;1.0
+lastlight infusion;1.0
+library phoenix;1.0
+lost in the mist;1.0
+loyal watchwing;1.0
+lucky prospector;1.0
+lumbering gruan;1.0
+madness;1.0
+merciless stranger;1.0
+minotaur ambassador;1.0
+nocturnal kyrex;1.0
+panoptic guardian;1.0
+pilfer;1.0
+pit fighter;1.0
+prophetic stranger;1.0
+protect;1.0
+psionic savant;1.0
+rally;1.0
+recogulator;1.0
+reforge;1.0
+regression;1.0
+sanctuary priest;1.0
+sandglass sentinel;1.0
+sanguine sword;1.0
+savage skybrood;1.0
+scepter of nobility;1.0
+scheme;1.0
+scrap heap;1.0
+second sight;1.0
+serpent mount;1.0
+shield bash;1.0
+shush;1.0
+signal flag;1.0
+sinister opportunist;1.0
+snowfort;1.0
+soul collector;1.0
+spirit drain;1.0
+stalwart silverwing;1.0
+stonepowder heretic;1.0
+stronghold’s visage;1.0
+sunken tower;1.0
+synchronized strike;1.0
+temper;1.0
+temple scribe;1.0
+tinker;1.0
+tinker apprentice;1.0
+topaz drake;1.0
+torrent of spiders;1.0
+tower shield;1.0
+trail runner;1.0
+trailblaze;1.0
+umbren coaxer;1.0
+umbren thirster;1.0
+unseal;1.0
+valkyrie aspirant;1.0
+valkyrie cadet;1.0
+valkyrie linebreaker;1.0
+valorous stranger;1.0
+voice of the speaker;1.0
+voracious fosora;1.0
+voyaging lumen;1.0
+wanted poster;1.0
+weather the storm;1.0
+wild cloudsnake;1.0
+wisplight;1.0
+xenan augury;1.0
+yeti snowchucker;1.0
+
+alluring ember;0.5
+amaran shoveler;0.5
+amethyst ring;0.5
+ancient bauble;0.5
+araktodon;0.5
+armorsmith;0.5
+backlash;0.5
+bad news;0.5
+belching behemoth;0.5
+brazen daredevil;0.5
+brilliant discovery;0.5
+burning glaive;0.5
+cabal slasher;0.5
+camp physician;0.5
+celestial omen;0.5
+centaur outrider;0.5
+champion of order;0.5
+cirso's meddling;0.5
+civic peacekeeper;0.5
+clever stranger;0.5
+cobalt ring;0.5
+combustion cell;0.5
+common cause;0.5
+copperhall blessing;0.5
+corrupt;0.5
+crown of authoriy;0.5
+crownwatch squire;0.5
+cult aspirant;0.5
+dinosaur stampede;0.5
+divining rod;0.5
+emerald acolyte;0.5
+envelop;0.5
+ephemeral wisp;0.5
+ghostform;0.5
+grasping at shadows;0.5
+grenadin cannoneer;0.5
+grenamender;0.5
+hall of lost kings;0.5
+hellfire rifle;0.5
+helpful doorbot;0.5
+hesitate;0.5
+hidden shiv;0.5
+iceberg frontrunner;0.5
+icebreaker;0.5
+icequake;0.5
+infinite hourglass;0.5
+jotun birth song;0.5
+lavablood goliath;0.5
+lethrai memory-keeper;0.5
+light the fuse;0.5
+mark of shame;0.5
+meditative stranger;0.5
+moment of creation;0.5
+mysterium orb;0.5
+nametaker;0.5
+north-wind herald;0.5
+oni striker;0.5
+pack hunt;0.5
+piercing grief;0.5
+privilege of rank;0.5
+purge the darkness;0.5
+rakano flagbearer;0.5
+rampart protector;0.5
+sand warrior;0.5
+secret pages;0.5
+shard of the spire;0.5
+slow;0.5
+smith's hammer;0.5
+song of war;0.5
+sorrow's shroud;0.5
+sporefolk;0.5
+spur on;0.5
+staff of the arch-magister;0.5
+stirring sand;0.5
+storm talisman;0.5
+talir’s choice;0.5
+talon dive;0.5
+threaten;0.5
+ticking grenadin;0.5
+tock tick;0.5
+trigger-happy;0.5
+twilight hermit;0.5
+twinbarrel;0.5
+unlock potential;0.5
+venomfang dagger;0.5
+wandering wisp;0.5
+worldjoiner;0.5
+worn shield;0.5
+xenan fanatic;0.5
+yeti spy;0.5
+
+a new tomorrow;0.0
+accelerate;0.0
+aid of the hooru;0.0
+ask for directions;0.0
+azindel’s gift;0.0
+azurite prixis;0.0
+black iron manacles;0.0
+bloodcall invocation;0.0
+bloodrite kalis;0.0
+brimstone altar;0.0
+calderan cradle;0.0
+clutchkeeper;0.0
+curse of taxation;0.0
+daze;0.0
+decay;0.0
+decimate;0.0
+dustblind;0.0
+electropy;0.0
+excavate;0.0
+fallen oni;0.0
+fantastic revelation;0.0
+feln cauldron;0.0
+first watch;0.0
+forge wolf;0.0
+forgotten find;0.0
+frontier jito;0.0
+hearty stranger;0.0
+humbug;0.0
+infernus;0.0
+inner fire;0.0
+invoke the waystones;0.0
+maelstrom bell;0.0
+master’s lesson;0.0
+mating call;0.0
+means to an end;0.0
+mind link;0.0
+novaquake titan;0.0
+rain of frogs;0.0
+reinforce;0.0
+riddle game;0.0
+ruin;0.0
+sabotage;0.0
+scare;0.0
+scourge of frosthome;0.0
+sentinel's might;0.0
+shepherd's horn;0.0
+solitude;0.0
+spell swipe;0.0
+spiked helm;0.0
+spirit of resistance;0.0
+steadfast deputy;0.0
+stonescar excavator;0.0
+stoneshaker;0.0
+swear vengeance;0.0
+temporal distortion;0.0
+the last word;0.0
+the witching hour;0.0
+trail stories;0.0
+treachery;0.0
+treasury gate;0.0
+vault of the praxis;0.0
+viper's bite;0.0
+water of life;0.0
+whetstone;0.0
+workshop forge;0.0
+young gun;0.0

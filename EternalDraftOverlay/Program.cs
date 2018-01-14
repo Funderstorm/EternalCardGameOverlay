@@ -15,46 +15,27 @@ namespace EternalDraftOverlay
         {
             var rankings = new Dictionary<string, string>();
 
-            foreach (var line in System.IO.File.ReadAllLines("../../DraftTierList_9-7-2017.txt"))
+            foreach (var line in System.IO.File.ReadAllLines("../../DraftTierList_01-11-2018_Overall.txt"))
             {
                 var entry = line.Split(';');
 
                 rankings.Add(entry[0], entry[1]);
             }
 
-            //var NodeList = new List<Node>();
-            //foreach (var line in System.IO.File.ReadAllLines("../../CardPixelData.txt"))
-            //{
-            //    var entry = line.Split(':');
-
-            //    (int, int, int)[] tmpArray = new (int, int, int)[10];
-            //    int i = 0;
-            //    foreach (var coords in entry[1].Split(';'))
-            //    {
-            //        var split = coords.Split(',');
-            //        var coord = (Int32.Parse(split[0]), Int32.Parse(split[1]), Int32.Parse(split[2]));
-
-            //        tmpArray[i] = coord;
-            //        i++;
-            //    }
-
-            //    NodeList.Add(new Node(entry[0], tmpArray));
-            //}
-
-            //var sakura = new CardCapturer();
-            //sakura.Capture();
-
-            string path = @"../../EternalCardName_Corpus.txt";
+            string path = @"../../EternalCardName_Corpus2.txt";
             if (!SymSpell.CreateDictionary(path, "")) Console.Error.WriteLine("File not found: " + System.IO.Path.GetFullPath(path));
 
-            SymSpell.verbose = 0;
-            SymSpell.editDistanceMax = 2;
+            //verbosity=Top=0: the suggestion with the highest term frequency of the suggestions of smallest edit distance found
+            //verbosity=Closest=1: all suggestions of smallest edit distance found, the suggestions are ordered by term frequency 
+            //verbosity=All=2: all suggestions <= maxEditDistance, the suggestions are ordered by edit distance, then by term frequency (slower, no early termination)
+
+            SymSpell.verbose = 2;
+            SymSpell.editDistanceMax = 3;
             //SymSpell.lp = 7;
 
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Overlay(rankings, NodeList));
             Application.Run(new Overlay(rankings));
         }
     }
