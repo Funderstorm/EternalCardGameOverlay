@@ -40,6 +40,9 @@
     <Reference Include="symspell, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\symspell.4.1.0\lib\netstandard1.3\symspell.dll</HintPath>
     </Reference>
+    <Reference Include="SymSpellCompound, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SymSpellCompound.1.1.0\lib\netstandard1.3\SymSpellCompound.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
@@ -212,6 +215,7 @@
     <None Include="Images\Ranking_CM_Final.png" />
     <None Include="Images\Ranking_CP_Final.png" />
     <None Include="Images\Ranking_F_Final.png" />
+    <None Include="Images\RescanButton.png" />
     <Content Include="wordfrequency_en.txt" />
     <Content Include="x64\liblept172.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

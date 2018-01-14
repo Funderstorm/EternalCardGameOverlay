@@ -21,7 +21,7 @@ namespace EternalDraftOverlay
         {
             if(Application.OpenForms["yourForm"] != null)
             {
-                (Application.OpenForms["yourForm"] as Overlay).RescanPage();
+                //(Application.OpenForms["yourForm"] as Overlay).RescanPage();
             }
         }
     }
